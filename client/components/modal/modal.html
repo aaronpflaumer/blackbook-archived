@@ -1,0 +1,91 @@
+<script type="text/ng-template" id="myModalContent.html">
+  <div ng-switch="modalType">
+
+    <!-- Book Routes -->
+    <div ng-switch-when="add-book">
+      <div class="modal-header">
+        <h3 class="modal-title">Add Book</h3>
+      </div>
+      <div class="modal-body">
+        <input ng-model="bookData.name"></input>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <div ng-switch-when="edit-book">
+      <div class="modal-header">
+        <h3 class="modal-title">Edit Book</h3>
+      </div>
+      <div class="modal-body">
+        <input ng-model="bookData.name"></input>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <div ng-switch-when="delete-book">
+      <div class="modal-header">
+        <h3 class="modal-title">Delete Book</h3>
+      </div>
+      <div class="modal-body">
+        Are you sure?
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Character Routes -->
+    <div ng-switch-when="add-character">
+      <div class="modal-header">
+        <h3 class="modal-title">Add Character</h3>
+      </div>
+      <div class="modal-body">
+        <input ng-model="characterData.name"></input>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <div ng-switch-when="edit-character">
+      <div class="modal-header">
+        <h3 class="modal-title">Edit Character</h3>
+      </div>
+      <div class="modal-body">
+        <input ng-model="characterData.name"></input>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <div ng-switch-when="delete-character">
+      <div class="modal-header">
+        <h3 class="modal-title">Delete Character</h3>
+      </div>
+      <div class="modal-body">
+        Are you sure?
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <div ng-switch-default>
+      <div class="modal-header">
+        <h3 class="modal-title">Deal with it.</h3>
+      </div>
+    </div>
+
+  </div>
+</script>

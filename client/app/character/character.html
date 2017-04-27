@@ -1,0 +1,35 @@
+<modal></modal>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="character-wrapper">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="square pull-left">
+            <p>
+              {{ character.name }}
+            </p>
+          </div>
+          <div>
+            <p>
+              Biography
+            </p>
+            <p>
+              {{ character.biography }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tags" ng-repeat="tag in tags">
+            {{ tag.name }} {{ tag.value }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

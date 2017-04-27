@@ -1,0 +1,39 @@
+.form-wrapper {
+  color: $offWhite;
+  background-color: $cuttySark;
+  border: 1px solid $envy;
+  border-radius: 20px;
+  height: 250px;
+  min-width: 200px;
+  padding-top: 40px;
+  margin-top: 200px;
+
+  form {
+    input {
+      display: block;
+      margin: 0 auto;
+    }
+
+    input[type='text'], input[type='password'] {
+      color: $offBlack;
+      width: 65%;
+      text-align: center;
+      font-size: 1.25em;
+      line-height: 2em;
+      margin-bottom: 15px;
+    }
+
+    input[type='submit'] {
+      margin-top: 30px;
+      color: $offWhite;
+      background-color: $cuttySark;
+      border: 1px solid $envy;
+      border-radius: 20px;
+      width: 100px;
+      font-size: 1.3em;
+      line-height: 1.3em;
+      padding: 10px;
+    }
+
+  }
+}

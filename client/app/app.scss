@@ -1,0 +1,103 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+
+/**
+ * App-wide Styles
+ */
+
+ $lightBlue: #6699CC;
+ $royalBlue: #003366;
+ $midnightBlue: #123456;
+ $lightGray: #C0C0C0;
+ $darkGray: #222222;
+ $offWhite: #F0F0F0;
+ $offBlack: #0F0F0F;
+
+ $mineShaft: #292929;
+ $cuttySark: #5B7876;
+ $envy: #8F9E8B;
+ $sidecar: #F2E6B6;
+ $treehouse: #412A22;
+
+
+ body {
+   background-color: $mineShaft;
+   color: $offWhite;
+   a,
+   a:link,
+   a:active,
+   a:visited,
+   a:hover {
+     color: $offWhite;
+     text-decoration: none;
+   }
+ }
+
+ .container-fluid {
+   padding: 2em 0 0 0;
+ }
+
+ .square {
+   color: $offWhite;
+   background-color: $cuttySark;
+   border: 1px solid $envy;
+   border-radius: 20px;
+   position: relative;
+   height: 250px;
+   width: 250px;
+   margin: 15px;
+   display: inline-block;
+   text-align: center;
+   p {
+     position: relative;
+     top: 50%;
+     margin-left: 15px;
+     margin-right: 15px;
+     margin-top: -1em;
+   }
+   .hitbox {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 210px;
+   }
+   .edit {
+     position: absolute;
+     bottom: 5px;
+     left: 5px;
+   }
+   .delete {
+     position: absolute;
+     bottom: 5px;
+     right: 5px;
+   }
+ }
+
+ .button {
+   color: $mineShaft;
+ }
+
+ .modal-content {
+   background-color: $cuttySark;
+   .modal-body {
+     color: $offBlack;
+   }
+ }
+
+[ng-click] {
+  cursor: pointer;
+}
+
+
+// Component styles are injected through grunt
+// injector
+@import 'auth/auth.scss';
+@import 'book/book.scss';
+@import 'character/character.scss';
+@import 'user/user.scss';
+@import 'modal/modal.scss';
+@import 'navbar/navbar.scss';
+// endinjector

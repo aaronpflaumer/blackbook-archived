@@ -1,0 +1,21 @@
+<modal></modal>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="square-wrapper">
+      <div class="square pull-left" ng-repeat="book in books">
+        <p>
+          {{ book.name }}
+        </p>
+        <div class="hitbox" ng-click="viewBook(book.id)"></div>
+        <button type="button" class="btn btn-default edit" ng-click="open({modalType: 'edit-book', bookId: book.id, bookName: book.name})">E</button>
+        <button type="button" class="btn btn-default delete" ng-click="open({modalType: 'delete-book', bookId: book.id})">D</button>
+      </div>
+      <div class="square pull-left" ng-click="open({modalType: 'add-book'})">
+        <p>
+          +
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

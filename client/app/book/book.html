@@ -1,0 +1,21 @@
+<modal></modal>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="square-wrapper">
+      <div class="square pull-left" ng-repeat="character in characters">
+        <p>
+          {{ character.name }}
+        </p>
+        <div class="hitbox" ng-click="viewCharacter(character.id)"></div>
+        <button type="button" class="btn btn-default edit" ng-click="open({modalType: 'edit-character', characterId: character.id, characterName: character.name})">E</button>
+        <button type="button" class="btn btn-default delete" ng-click="open({modalType: 'delete-character', characterId: character.id})">D</button>
+      </div>
+      <div class="square pull-left" ng-click="open({modalType: 'add-character'})">
+        <p>
+          +
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
